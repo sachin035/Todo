@@ -1,0 +1,21 @@
+.header {
+  @include flex(row, space-around);
+  padding: 10px, 30px;
+  background-color: #778187;
+  color: #fff;
+  padding: 15px 0;
+  &__logowrapper {
+    // flex-grow: 1;
+  }
+  &__nav {
+    flex-basis: 50%;
+    font-weight: bold;
+  }
+  &__iconwrapper {
+    // flex-grow: 1;
+  }
+  &__nav {
+    @include flex(row, space-between);
+    gap: 50px;
+  }
+}

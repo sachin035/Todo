@@ -1,0 +1,258 @@
+main {
+  padding: 30px 0;
+  position: relative;
+}
+
+.todo {
+  &__search {
+    margin-top: 50px;
+    input {
+      width: 100%;
+      height: 50px;
+      padding: 0 20px;
+      border-radius: 5px;
+      border-bottom: 2px solid black;
+    }
+  }
+  &__task {
+    @include flex(row, center);
+    margin-top: 50px;
+    input {
+      // width: 91%;
+      // height: 50px;
+      // padding: 0 20px;
+      // // border-radius: 12px;
+      // // border-bottom: 2px solid black;
+      // border: 1px solid grey;
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .todo__addinput input:last-child {
+      margin-bottom: 0;
+    }
+    // #input-box {
+    //   border-bottom: none;
+    // }
+    #input-description {
+      height: 80px;
+    }
+  }
+
+  &__iconwrapper1 {
+    position: absolute;
+    left: 70%;
+  }
+  // &__iconwrapper2 {
+  //   position: absolute;
+  //   right: 270px;
+  // }
+  // &__righticon {
+  //   @include flex(row, space-between);
+  //   gap: 30px;
+  // }
+
+  &__list {
+    #list-container li {
+      list-style: none;
+      padding: 10px;
+      border-bottom: 3px solid black;
+      margin-top: 20px;
+    }
+  }
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+#list-container li {
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+}
+
+#complete-container li,
+li {
+  background-color: #e1f7d5;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #a3e292;
+  border-radius: 5px;
+}
+
+#delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#delete-icon:hover {
+  color: #e74c3c;
+}
+
+//eta bata ho
+// body {
+//   font-family: "Montserrat", sans-serif;
+//   font-size: 16px;
+//   line-height: 1.6;
+//   color: #333;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// ul,
+// li {
+//   list-style-type: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// button {
+//   appearance: none;
+// }
+
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+
+// header {
+//   background-color: #3498db;
+//   color: #fff;
+//   padding: 15px 0;
+// }
+
+// .header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .header__nav {
+//   display: flex;
+//   align-items: center;
+//   gap: 20px;
+// }
+
+// .header__nav--item {
+//   color: #fff;
+//   text-decoration: none;
+//   font-weight: bold;
+// }
+
+// .header__iconwrapper svg {
+//   fill: #fff;
+// }
+
+// main {
+//   padding: 30px 0;
+// }
+
+// .todo__search {
+//   margin-top: 20px;
+// }
+
+// .todo__search input {
+//   width: 100%;
+//   height: 40px;
+//   padding: 10px;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+// }
+
+// .todo__task {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   margin-top: 20px;
+// }
+
+// .todo__addinput input {
+//   width: 100%;
+//   height: 40px;
+//   padding: 10px;
+//   margin-bottom: 10px;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+// }
+
+// .todo__addinput input:last-child {
+//   margin-bottom: 0;
+// }
+
+// .todo__task input {
+//   width: 100%;
+//   height: 40px;
+//   padding: 10px;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+// }
+
+// .todo__task #input-description {
+//   height: 80px;
+// }
+
+// .todo__righticon {
+//   background-color: #3498db;
+//   border: none;
+//   padding: 10px 20px;
+//   color: #fff;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
+
+// .todo__list #list-container li {
+//   background-color: #fff;
+//   padding: 15px;
+//   margin-top: 20px;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   position: relative;
+// }
+
+// .checkbox {
+//   margin-right: 10px;
+// }
+
+// #complete-container li,
+// #uncomplete-container li {
+//   background-color: #e1f7d5;
+//   padding: 15px;
+//   margin-top: 20px;
+//   border: 1px solid #a3e292;
+//   border-radius: 5px;
+// }
+
+// #delete-icon {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   cursor: pointer;
+// }
+
+// #delete-icon:hover {
+//   color: #e74c3c;
+// }
+
+// /* Responsive Styles */
+// @media (max-width: 768px) {
+//   .header {
+//     flex-direction: column;
+//     text-align: center;
+//   }
+
+//   .header__nav {
+//     margin-top: 20px;
+//   }
+// }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__logowrapper">
+          <img
+            src="https://www.lftechnology.com/images/lf-logo.svg"
+            alt="leapfrog-logo"
+          />
+        </div>
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a class="header__nav--item" href="#">Home</a>
+            </li>
+            <!-- <li>
+              <a class="header__nav--item" href="#">Completed</a>
+            </li>
+            <li>
+              <a class="header__nav--item" href="#">Remaining</a>
+            </li> -->
+          </ul>
+        </nav>
+        <div class="header__iconwrapper">
+          <svg
+            class=""
+            width="25"
+            height="25"
+            viewBox="0 0 416 416"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M208 0C93.1 0 0 93.1 0 208s93.1 208 208 208 208-93.1 208-208S322.9 0 208 0zm90.5 224H224v74.5c0 8.8-7.2 16-16 16-4.4 0-8.4-1.8-11.3-4.7-2.9-2.9-4.7-6.9-4.7-11.3V224h-74.5c-4.4 0-8.4-1.8-11.3-4.7-2.9-2.9-4.7-6.9-4.7-11.3 0-8.8 7.2-16 16-16H192v-74.5c0-8.8 7.2-16 16-16s16 7.2 16 16V192h74.5c8.8 0 16 7.2 16 16s-7.2 16-16 16z"
+              fill="#4499cc"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container todo">
+        <div class="todo__search">
+          <input
+            type="search"
+            id="search-item"
+            name="q"
+            placeholder="Search your list"
+          />
+          <i class="fa-thin fa-magnifying-glass"></i>
+        </div>
+        <div class="todo__task">
+          <div class="todo__addinput">
+            <input
+              type="text"
+              id="input-box"
+              placeholder="Add a task"
+              required
+            />
+            <input
+              type="text"
+              id="input-description"
+              placeholder="Add a description"
+              required
+            />
+          </div>
+          <button class="todo__righticon">
+            <div class="todo__iconwrapper1" id="add-icon">
+              <svg
+                class=""
+                width="70"
+                height="70"
+                viewBox="0 0 416 416"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M208 0C93.1 0 0 93.1 0 208s93.1 208 208 208 208-93.1 208-208S322.9 0 208 0zm90.5 224H224v74.5c0 8.8-7.2 16-16 16-4.4 0-8.4-1.8-11.3-4.7-2.9-2.9-4.7-6.9-4.7-11.3V224h-74.5c-4.4 0-8.4-1.8-11.3-4.7-2.9-2.9-4.7-6.9-4.7-11.3 0-8.8 7.2-16 16-16H192v-74.5c0-8.8 7.2-16 16-16s16 7.2 16 16V192h74.5c8.8 0 16 7.2 16 16s-7.2 16-16 16z"
+                  fill="#4499cc"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <!-- task list -->
+        <div class="todo__list">
+          <ul id="list-container">
+            To Do List
+          </ul>
+        </div>
+
+        <div>
+          <ul id="complete-container">
+            Completed Task
+          </ul>
+        </div>
+
+        <!-- <div>
+          <ul id="uncomplete-container">
+            Remaining
+          </ul>
+        </div> -->
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
